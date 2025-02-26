@@ -1,0 +1,281 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 12px;
+}
+
+body {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.nav
+{
+    width: 100%;
+    min-height: 75px;
+    /* height: 75px; */
+    position: sticky;
+    top: 0px;
+    padding: 15px;
+    /* background-color:rgb(183 101 34 / 37%); */
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    /* margin-bottom: 5px; */
+    font-weight: bold;
+}
+
+.fond
+{
+    background-image: url("../images/fond2_bis.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajuste l’image pour qu’elle couvre tout l’écran */
+	background-position: center; /* Centre l'image */
+    object-fit: contain;
+}
+
+.center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil
+{
+    width: 100%;
+    height: 100%;
+}
+
+.form-inscription
+{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 15px;
+}
+
+.form-inscription div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn
+{
+    background: #2c272985;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 4px; 
+}
+
+input[type="submit"],.btn-send {
+    background: #ff016b85;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+.delete, .modify, .preparepanier {
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.delete
+{
+    background: #da0707e3;
+}
+
+.modify
+{
+    background: #17850de3;
+}
+
+.preparepanier
+{
+    background-color: #333;
+}
+
+
+input[type="submit"]:hover {
+    background: #ff016b62;
+}
+
+h1 {
+    margin:unset;
+    color: #333;
+}
+
+.global{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.container_principal
+{
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+}
+
+.container_principal > h2
+{
+    color: white;
+    font-size: 2rem;
+}
+
+.container
+{
+    width: 80%;
+    /* margin-top: 55px; */
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.midplease
+{
+    text-align: center;
+}
+
+.flex-column
+{
+    flex-direction: column;
+}
+
+.add-student
+{
+    display: inline-block;
+    height: 35px;
+}
+
+.title
+{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(23, 13, 112, 0.795);
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+.title > h1
+{
+    color: white;
+}
+
+.bvn
+{
+    text-align: center;
+    font-size: 6rem;
+    /* margin-bottom: 25%; */
+    color: white;
+}
+
+/* Conteneur du tableau */
+.table-container {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Style du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.select-base
+{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
