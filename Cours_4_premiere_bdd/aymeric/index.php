@@ -233,6 +233,8 @@ var_dump($leArrayResult2);
 //exo16
 echo '<br><br>';
 
+$conditionValeur = 20000000;
+
 $pays_population = [
     'France' => 67595000,
     'Suede' => 9998000,
@@ -245,7 +247,43 @@ $pays_population = [
 
 foreach($pays_population as $cle => $valeur)
 {
-    // if($valeur )
+    if($valeur >= $conditionValeur )
+    {
+        echo $cle . " : " . $valeur ."<br>";
+    }
 }
 
+
+//exo17
+echo '<br><br>';
+
+$pays_population_v2 = [
+    'France' => 67595000,
+    'Suede' => 9998000,
+    'Suisse' => 8417000,
+    'Kosovo' => 1820631,
+    'Malte' => 434403,
+    'Mexique' => 122273500,
+    'Allemagne' => 82800000,
+];
+
+echo 'Il y a '.count($pays_population).' éléments dans le tableau !';
+
+
+//exo18
+echo '<br><br>';
+
+$cocktails = ['Mojito', 'Long Island Iced Tea', 'Gin Fizz', 'Moscow mule'];
+echo $cocktails[1];
+
+//exo19
+echo '<br><br>';
+
+$personnes = array(
+    'Jean' => 16,
+    'Manuel' => 19,
+    'André' => 66
+ );
+
+echo 'Manuel a '.$personnes['Manuel'].' ans !';
 ?>
