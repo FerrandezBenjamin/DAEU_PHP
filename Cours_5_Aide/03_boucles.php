@@ -101,4 +101,59 @@ echo "<br>";
 
 // Tu peux aussi combiner boucles + conditions pour aller plus loin !
 
+
+echo "<br><br>";
+echo "<br><br>";
+
+// ------------------------------
+// 1. Afficher les nombres de 1 à 100 avec une boucle for
+echo "1. Nombres de 1 à 100 :<br>";
+for ($i = 1; $i <= 100; $i++) {
+    echo $i . " ";
+}
+echo "<br><br>";
+
+// ------------------------------
+// 2. Afficher les multiples de 5 entre 0 et 50 avec while
+echo "2. Multiples de 5 entre 0 et 50 :<br>";
+$j = 0;
+while ($j <= 50) {
+    if ($j % 5 === 0) {
+        echo $j . " ";
+    }
+    $j++;
+}
+echo "<br><br>";
+
+// ------------------------------
+// 3. Parcourir un tableau d’aliments et afficher "J’aime les ..."
+echo "3. Aliments préférés :<br>";
+$aliments = ["pâtes", "chocolat", "sushi", "fromage"];
+foreach ($aliments as $aliment) {
+    echo "J’aime les $aliment<br>";
+}
+echo "<br>";
+
+// ------------------------------
+// 4. BONUS : Afficher les produits au-dessus de 10€ et arrêter si "stop"
+echo "4. Produits à plus de 10€ (avec stop si produit 'stop') :<br>";
+$produits = [
+    "bananes" => 4,
+    "chocolat" => 12,
+    "stop" => 0,
+    "vin" => 15,
+    "pizza" => 8
+];
+
+foreach ($produits as $produit => $prix) {
+    if ($produit === "stop") {
+        echo "Produit 'stop' rencontré, on arrête la boucle.<br>";
+        break;
+    }
+
+    if ($prix > 10) {
+        echo "$produit coûte $prix €<br>";
+    }
+}
+
 ?>
